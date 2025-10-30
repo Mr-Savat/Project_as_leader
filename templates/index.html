@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Welcome to Small Login App</h1>
+  {% if user %}
+    <p>អ្នកបានចូលជា <strong>{{ user }}</strong></p>
+  {% else %}
+    <p>សូមចូល ឬ ចុះឈ្មោះ</p>
+  {% endif %}
+{% endblock %}
