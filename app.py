@@ -58,7 +58,7 @@ def login():
             flash("ចូលបានជោគជ័យ!", "success")
             return redirect(url_for("index"))
         else:
-            flash("ឈ្មោះឬពាក្យសម្ងាត់មិនត្រឹមត្រូវ", "danger")
+            flash("ឈ្មោះឬពាក្យសម្ងាត់មិនត្រឹមត្រូវទេ", "danger")
             return redirect(url_for("login"))
     return render_template("login.html")
 
